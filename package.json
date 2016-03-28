@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path css css/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,19 @@
     "webpack": "^1.12.14"
   },
   "dependencies": {
-    "jquery": "^2.2.2"
+    "bootstrap-loader": "^1.0.10",
+    "bootstrap-sass": "^3.3.6",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "jquery": "^2.2.2",
+    "lodash": "^4.6.1",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.2",
+    "resolve-url-loader": "^1.4.3",
+    "sass": "^0.5.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7"
   }
 }

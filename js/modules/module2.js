@@ -102,4 +102,4 @@ var people = [{"id":1,"gender":"Male","first_name":"Antonio","last_name":"Cruz",
 {"id":100,"gender":"Female","first_name":"Lois","last_name":"Nichols","email":"lnichols2r@amazon.co.jp","ip_address":"121.176.98.245"}];
 
 var numDudes = _.filter(people, { gender: 'Male' }).length;
-alert(numDudes + ' dudes');
+console.info(numDudes + ' dudes');
